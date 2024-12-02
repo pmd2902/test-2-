@@ -7,6 +7,38 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="nav">
+        <div class="nav__logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </div>
+        <input type="checkbox" name="nav__input" id="nav-mobile-input" />
+        <label for="nav-mobile-input" class="nav__bar-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+
+        <label for="nav-mobile-input" class="nav__overlay"></label>
+        <nav class="nav__mobile">
+          <label for="nav-mobile-input" class="nav__mobile-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              />
+            </svg>
+          </label>
+          <ul class="nav__mobile-list">
+            <li><a href="#" class="nav__mobile-link">検査結果画面の解説</a></li>
+            <li><a href="#" class="nav__mobile-link">主な機能</a></li>
+            <li><a href="#" class="nav__mobile-link">利用シーン別ガイド</a></li>
+            <li><a href="#" class="nav__mobile-link">サポートサイト</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main class="wide">
       <aside>
         <div class="sidebar">
@@ -50,6 +82,7 @@
           </ul>
         </div>
       </aside>
+
       <div class="content">
         <section class="header-section">
           <div class="header">
@@ -122,12 +155,12 @@
         <section class="explain-section">
           <div class="explain-header">
             <img src="./assets/pic8.svg" alt="explain" />
-            <div class="guide-title">
+            <div class="explain-title">
               <h3>検査結果画面の解説</h3>
               <span>SALES SCOREのアウトプット項目について紹介します。</span>
             </div>
           </div>
-          <div class="explain-title">
+          <div class="line-title">
             <div class="line"></div>
             <h1>適性検査のアウトプット</h1>
           </div>
@@ -145,22 +178,178 @@
               <span>データ比較</span>
             </div>
           </div>
-          <div class="explain-title">
+          <div class="line-title">
             <div class="line"></div>
             <h1>企業傾向分析</h1>
           </div>
           <div class="explain-list">
             <div class="explain-item">
-              <img src="./assets/pic9.svg" />
-              <span>データサマリー</span>
+              <img src="./assets/pic12.svg" />
+              <span>全体比較</span>
             </div>
             <div class="explain-item">
-              <img src="./assets/pic10.svg" />
-              <span>データ詳細</span>
+              <img src="./assets/pic13.svg" />
+              <span>営業タイプ傾向</span>
             </div>
             <div class="explain-item">
-              <img src="./assets/pic11.svg" />
-              <span>データ比較</span>
+              <img src="./assets/pic14.svg" />
+              <span>High-Low分析</span>
+            </div>
+            <div class="explain-item">
+              <img src="./assets/pic15.svg" />
+              <span>構成比比較</span>
+            </div>
+          </div>
+          <div class="line-title">
+            <div class="line"></div>
+            <h1>検査結果詳細</h1>
+          </div>
+          <div class="explain-list">
+            <div class="explain-item">
+              <img src="./assets/pic16.svg" />
+              <span>表示される予測値</span>
+            </div>
+            <div class="explain-item">
+              <img src="./assets/pic17.svg" />
+              <span> 表示される営業タイプ</span>
+            </div>
+          </div>
+        </section>
+        <section class="features-section">
+          <div class="features-header">
+            <img src="./assets/pic18.png" alt="main-features" />
+            <div class="features-title">
+              <h3>主な機能</h3>
+              <span
+                >SALES
+                SCOREの利用方法及び、ツールに表示される項目について紹介します。</span
+              >
+            </div>
+          </div>
+          <div class="features-list-main">
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>管理者</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・管理者の登録・編集</span>
+                  </li>
+                  <li>
+                    <span>・表示される管理者情報</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>従業員</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・従業員の登録・編集</span>
+                  </li>
+                  <li>
+                    <span>・表示される従業員情報</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>応募者</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・応募者の登録・編集</span>
+                  </li>
+                  <li>
+                    <span>・表示される応募者情報</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>実績データの登録</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・実績の登録・編集 </span>
+                  </li>
+                  <li>
+                    <span>・分析対象範囲の指定</span>
+                  </li>
+                  <li>
+                    <span>・成績区分の指定</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>適性検査</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・適性検査推奨環境</span>
+                  </li>
+                  <li>
+                    <span>・受検メールの送信</span>
+                  </li>
+                  <li>
+                    <span>・ＵＲＬの発行</span>
+                  </li>
+                  <li>
+                    <span>・受検者のステータス</span>
+                  </li>
+                  <li>
+                    <span>・検査実施項目</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>ダッシュボード機能</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・実績データ分析機能</span>
+                  </li>
+                  <li>
+                    <span>・運用サポート機能</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-list">
+              <div class="line-title line-feature">
+                <div class="line"></div>
+                <h1>契約について</h1>
+              </div>
+              <div class="features-item">
+                <ul>
+                  <li>
+                    <span>・契約情報の確認</span>
+                  </li>
+                  <li>
+                    <span>・解約の方法</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
